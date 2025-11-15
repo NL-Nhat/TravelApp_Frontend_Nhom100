@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TravelApp</string>
+    <string name="home">Trang chủ</string>
+    <string name="category">Danh mục</string>
+    <string name="account">Tài khoản</string>
+    <string name="calendar">Lịch</string>
+    <string name="favorite">Yêu thích</string>
+</resources>
