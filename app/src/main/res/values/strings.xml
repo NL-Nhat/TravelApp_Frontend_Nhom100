@@ -5,4 +5,5 @@
     <string name="account">Tài khoản</string>
     <string name="calendar">Lịch</string>
     <string name="favorite">Yêu thích</string>
+    <string name="tour_title">Tour du lịch - %1$s</string>
 </resources>
