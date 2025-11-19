@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30sp"
-        android:text="Chào mừng trở lại"
+        android:text="@string/chaomungtrolai"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
@@ -21,7 +21,7 @@
 
     <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:orientation="vertical"
@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="17sp"
-            android:text="Tên đăng nhập"
+            android:text="@string/tendangnhap"
             android:textSize="17sp"
             android:textStyle="bold" />
 
@@ -69,7 +69,7 @@
                     android:background="@null"
                     android:layout_marginStart="6dp"
                     android:layout_marginEnd="20dp"
-                    android:hint="Tên người dùng"
+                    android:hint="@string/tendangnhap"
                     android:inputType="text"
                     android:textSize="17sp" />
             </LinearLayout>
@@ -79,7 +79,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="17sp"
-            android:text="Mật khẩu"
+            android:text="@string/matkhau"
             android:textSize="17sp"
             android:textStyle="bold" />
 
@@ -114,7 +114,7 @@
                     android:layout_marginStart="6dp"
                     android:layout_marginEnd="20dp"
                     android:inputType="textPassword"
-                    android:hint="Mật khẩu"
+                    android:hint="@string/matkhau"
                     android:textSize="17sp" />
                 <ImageView
                     android:layout_width="30dp"
@@ -139,7 +139,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ghi nhớ tài khoản"
+                android:text="@string/ghinhotaikhoan"
                 android:textColor="#000000"
                 android:textSize="17sp"
                 android:layout_gravity="center"/>
@@ -152,7 +152,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/custom_underline"
-                android:text="Quên mật khẩu"
+                android:text="@string/quenmatkhau"
                 android:textSize="17sp"
                 android:textStyle="bold"
                 android:textColor="#237CF2"
@@ -168,7 +168,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="17sp"
-                android:text="Bạn chưa có tài khoản?"
+                android:text="@string/banchuacotk"
                 android:textColor="#000000"
                 android:textAlignment="center"/>
             <TextView
@@ -198,7 +198,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="hoặc tiếp tục với"
+                android:text="@string/hoactieptucvoi"
                 android:textColor="#000000"
                 android:textSize="14sp"
                 android:layout_marginStart="8dp"
@@ -280,7 +280,7 @@
             android:layout_width="250dp"
             android:layout_height="60dp"
             android:backgroundTint="#237CF2"
-            android:text="Đăng nhập"
+            android:text="@string/dangnhap"
             android:textStyle="bold"
             android:textSize="18sp"
             android:layout_marginTop="40dp"
