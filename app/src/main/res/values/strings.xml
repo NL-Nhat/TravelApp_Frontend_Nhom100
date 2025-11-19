@@ -6,4 +6,20 @@
     <string name="calendar">Lịch</string>
     <string name="favorite">Yêu thích</string>
     <string name="tour_title">Tour du lịch - %1$s</string>
+    <string name="batdaukynghi">Bắt đầu kỳ nghỉ</string>
+    <string name="tendangnhap">Tên đăng nhập</string>
+    <string name="hovaten">Họ và tên</string>
+    <string name="email">Email</string>
+    <string name="xacnhanmatkhau">Xác nhận mật khẩu</string>
+    <string name="toidongy">Tôi đồng ý với</string>
+    <string name="dieukhoan">Điều khoản</string>
+    <string name="bandacotk">Bạn đã có tài khoản</string>
+    <string name="dangnhap">Đăng nhập</string>
+    <string name="dangky">Đăng ký</string>
+    <string name="matkhau">Mật khẩu</string>
+    <string name="hoactieptucvoi">hoặc tiếp tục với</string>
+    <string name="quenmatkhau">Quên mật khẩu</string>
+    <string name="ghinhotaikhoan">Ghi nhớ tài khoản</string>
+    <string name="banchuacotk">Bạn chưa có tài khoản?</string>
+    <string name="chaomungtrolai">Chào mừng trở lại</string>
 </resources>
