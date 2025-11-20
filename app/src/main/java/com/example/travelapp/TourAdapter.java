@@ -1,6 +1,7 @@
 package com.example.travelapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -36,29 +37,26 @@ public class TourAdapter extends RecyclerView.Adapter<TourAdapter.TourViewHolder
         holder.tvTourPrice.setText(tour.getPrice());
         holder.tvTourRating.setText(String.valueOf(tour.getRating()));
 
-        // Dùng Glide để tải ảnh
         Glide.with(context)
                 .load(tour.getImageResId())
                 .into(holder.ivTourImage);
 
-        // Cập nhật trạng thái icon yêu thích
         if (tour.isFavorite()) {
             holder.ivFavorite.setImageResource(R.drawable.ic_favorite_filled);
         } else {
             holder.ivFavorite.setImageResource(R.drawable.ic_favorite_border);
         }
 
-        // Xử lý sự kiện nhấn vào nút yêu thích
         holder.ivFavorite.setOnClickListener(v -> {
-            // Đảo ngược trạng thái yêu thích của tour
             tour.setFavorite(!tour.isFavorite());
+            notifyItemChanged(position);
+        });
 
-            // Cập nhật lại icon ngay lập tức
-            if (tour.isFavorite()) {
-                holder.ivFavorite.setImageResource(R.drawable.ic_favorite_filled);
-            } else {
-                holder.ivFavorite.setImageResource(R.drawable.ic_favorite_border);
-            }
+        // Xử lý sự kiện nhấn vào toàn bộ item
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(context, TourDetailActivity.class);
+            intent.putExtra("tour", tour);
+            context.startActivity(intent);
         });
     }
 
@@ -67,7 +65,6 @@ public class TourAdapter extends RecyclerView.Adapter<TourAdapter.TourViewHolder
         return tourList.size();
     }
 
-    // Lớp ViewHolder
     public static class TourViewHolder extends RecyclerView.ViewHolder {
         ImageView ivTourImage, ivFavorite;
         TextView tvTourTitle, tvTourPrice, tvTourRating;
