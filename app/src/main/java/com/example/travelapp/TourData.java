@@ -10,7 +10,7 @@ public class TourData {
 
     private TourData() {
         tours = new ArrayList<>();
-        // Khởi tạo dữ liệu mẫu
+        // Khởi tạo dữ liệu mẫu để lấy dữ liệu mẫu cho Adapter
         tours.add(new Tour("Đà Nẵng", "$100", 5.0, R.drawable.da_nang));
         tours.add(new Tour("Hà Nội", "$120", 4.8, R.drawable.ha_noi));
         tours.add(new Tour("Quảng Ninh", "$150", 4.9, R.drawable.quang_ninh));
